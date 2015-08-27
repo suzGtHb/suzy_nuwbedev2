@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Web Calculator</title>
+    <link href="Calculator.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="CalculatorLibrary.js"></script>
+</headmainB
+<body>
+
+    <header>
+        <hgroup id="mainHdrGrp">
+            <h1 id="main_hdr">Contoso Ltd.</h1>
+            <h2 id="second_hdr">Your Success Equals our success</h2>
+        </hgroup>
+    </header>
+
+    <div class="containers">
+        <nav>
+            <a id="left_container_home_link" href="WebCalculator2.html">Home</a>
+            <a id="calculator_history_link" href="https://en.wikipedia.org/wiki/Calculator">History of the Calculator</a>
+        </nav>
+
+        <aside class="adGroup">
+            <p id="right_container1">
+                Advertisements:
+            </p>
+            <p id="right_container2">
+                Some ideas of calculators you can purchase.
+            </p>
+            <img id="cI1" src="https://cdn1.iconfinder.com/data/icons/SIGMA/education_icons/png/400/calculator.png" alt="Calculator1" />
+            <img id="cI2" src="http://tse1.mm.bing.net/th?&id=JN.tHq4laxYBhSAa7S3zOmVFg&w=300&h=300&c=0&pid=1.9&rs=0&p=0&r=0" alt="Calculator2" />
+            <img id="cI3" src="http://tse1.mm.bing.net/th?&id=JN.E8FfwujP29hS4EyGe0ik0w&w=300&h=300&c=0&pid=1.9&rs=0&p=0&r=0" alt="Calculator3" />
+            <img id="cI4" src="http://tse1.mm.bing.net/th?&id=JN.aI5nlJ99fqVt6J7ScSM9Wg&w=300&h=300&c=0&pid=1.9&rs=0&p=0&r=0" alt="Calculator4" />
+            <p id="right_container2">
+                Pictures of some Vintage Calculators:
+            </p>
+            <img id="cV1" src="http://tse1.mm.bing.net/th?&id=JN.FsC9Bb9TbdIMAJ7pfGFhlw&w=300&h=300&c=0&pid=1.9&rs=0&p=0&r=0" alt="Vintage Calculator1" />
+            <img id="cV2" src="http://tse1.mm.bing.net/th?&id=JN.V6cywExCrufjqvwOOMYO7w&w=300&h=300&c=0&pid=1.9&rs=0&p=0&r=0" alt="Vintage Calculator2" />
+            <img id="cV3" src="http://tse1.mm.bing.net/th?q=1970s+Calculator&w=100&h=100&c=1&rs=1&qlt=90&bw=1&bc=333333&pid=InlineBlock&mkt=en-US&adlt=moderate&t=1&mw=247" alt="Vintage Calculator3" />
+            <img id="cV4" src="http://tse1.mm.bing.net/th?&id=JN.QMaNIbCbo3Nv82aPmt8%2bOg&w=300&h=300&c=0&pid=1.9&rs=0&p=0&r=0" alt="Vintage Calculator4" />
+            <p id="right_container2">
+                Picture of the Original Calculator:
+            </p>
+            <img id="cVOrig" src="http://tse4.mm.bing.net/th?q=Original+Calculator&w=100&h=100&c=1&rs=1&qlt=90&bw=1&bc=333333&pid=InlineBlock&mkt=en-US&adlt=moderate&t=1&mw=247" alt="Original Calculator" />
+        </aside>
+    </div> <!-- End of class containers -->
+
+    <div class="mainBtnGroupWin">
+        <table>
+            <tr id="inputGrp1">
+                <td>
+                    <input value="0" id="txtResult" type="text" readonly="readonly" />
+                </td>
+            </tr>
+            <tr id="inputGrp2">
+                <td>
+                    <input value="0" type="text" id="txtInput" readonly="readonly" />
+                </td>
+            </tr>
+
+        </table>
+
+        <table class="numberGrp">
+            <tr id="clearBtns">
+                <td>
+                    <button id="btnClearEntry">CE</button>
+                </td>
+                <td>
+                    <button id="btnClear">C</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button value="7" id="b7">7</button>
+                </td>
+                <td>
+                    <button value="8" id="b8">8</button>
+                </td>
+                <td>
+                    <button value="9" id="b9">9</button>
+                </td>
+                <td>
+            </tr>
+            <tr>
+
+                <td>
+                    <button value="4" id="b4">4</button>
+                </td>
+                <td>
+                    <button value="5" id="b5">5</button>
+                </td>
+                <td>
+                    <button value="6" id="b6">6</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button value="1" id="b1">1</button>
+                </td>
+                <td>
+                    <button value="2" id="b2">2</button>
+                </td>
+                <td>
+                    <button value="3" id="b3">3</button>
+                </td>
+            </tr>
+            <tr>
+
+                <td id="zeroBtn">
+                    <button id="btn0">0</button>
+                </td>
+            </tr>
+        </table><!--End of numberGrp class -->
+        <table class="calculateBtns">
+            <tr>
+                <td id="lastBtnGrp1">
+                    <button value="btnPlus">+</button>
+                </td>
+                <td>
+                    <button value="btnMinus">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td id="lastBtnGrp2">
+                    <button value="btnMultiply">*</button>
+                </td>
+                <td>
+                    <button value="btnDivide">/</button>
+                </td>
+                <td>
+                    <button id="equalBtn">=</button>
+                </td>
+            </tr>
+        </table>
+
+    </div> <!--End of class mainBtnGroupWin-->
+
+
+    <footer>
+        <p>
+            Copyright &copy; 2012, Contoso Ltd., All rights reserved
+        </p>
+    </footer>
+</body>
+</html>

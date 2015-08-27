@@ -1,0 +1,122 @@
+﻿body {
+    background-color: chartreuse;
+}
+
+#main_hdr, #second_hdr {
+    font-size: x-large;
+    line-height: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#second_hdr {
+    font-size: large;
+}
+
+.containers {
+    margin-top: 25px;
+    margin-left: 10px;
+    color: #2300ff;
+}
+
+#left_container_home_link, #calculator_history_link {
+    position: absolute;
+    text-align: center;
+    border: ridge red 10px;
+    max-width: 90px;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+#calculator_history_link {
+    margin-top: 65px;
+}
+
+.adGroup {
+    position: fixed;
+    border: ridge blue 10px;
+    max-width: 500px;
+    /*Keep the border width to a maximum so it sizes border to that width*/
+    margin-left: 865px;
+}
+
+#right_container1, right_container2 {
+    
+}
+
+#right_container1, #right_container2 {
+    /*Let the aside tag be viewable if scrolling the page*/
+    text-align: center;
+    font-size: larger;
+}
+
+/*Calculator images*/
+#cI1, #cI2, #cI3, #cI4, #cV1, #cV2, #cV3, #cV4, #cVOrig {
+    width: 80px;
+    height: 80px;
+}
+
+/*vintage calculator image*/
+#cVOrig {
+    margin-left: 38%;
+}
+
+div.mainBtnGroupWin {
+    /* position margins to shape border around controls */
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 250px;
+    padding: 40px;
+    border: double 40px;
+    border-color: rgb(178, 0, 255);
+    background-color: deeppink;
+}
+
+input {
+    width: 270px;
+    height: 30px;
+    text-align: right;
+    font-size: larger;
+}
+
+/*
+
+@keyframes flashResults {
+    from {
+        color: #0072ff;
+        background-color: rgb(0, 255, 131);
+    }
+
+    to {
+        color: rgb(210, 0, 255);
+        font-weight: bold;
+        background-color: yellow;
+    }
+}
+
+@-webkit-keyframes flashResults {
+    from {
+        color: #0072ff;
+        background-color: rgb(255, 106, 0);
+    }
+
+    to {
+        color: rgb(210, 0, 255);
+        font-weight: bold;
+        background-color: yellow;
+    }
+}
+
+*/
+
+button {
+    width: 90px;
+    height: 40px;
+    font-size: x-large;
+}
+
+footer {
+    font-size: medium;
+    margin-top: 615px;
+}
